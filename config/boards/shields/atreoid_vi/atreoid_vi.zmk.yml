@@ -3,9 +3,10 @@ id: atreoid_vi
 name: Atreoid Vi
 type: shield
 requires: [nice_nano_v2]
-# exposes: [i2c_oled]
+exposes: [nice_view_header]
 features:
   - keys
+  - display
 outputs:
   - usb
   - ble
