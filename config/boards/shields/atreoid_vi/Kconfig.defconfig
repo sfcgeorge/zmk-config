@@ -1,0 +1,6 @@
+if SHIELD_ATREOID_VI
+
+config ZMK_KEYBOARD_NAME
+    default "Atreoid Vi"
+
+endif

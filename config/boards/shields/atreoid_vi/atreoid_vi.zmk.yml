@@ -1,0 +1,12 @@
+file_format: "1"
+id: atreoid_vi
+name: Atreoid Vi
+type: shield
+requires: [nice_nano_v2]
+# exposes: [i2c_oled]
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+url: https://sfcgeorge.co.uk
