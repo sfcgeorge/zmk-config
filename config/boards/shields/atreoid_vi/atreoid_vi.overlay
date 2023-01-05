@@ -66,12 +66,4 @@ RC(6,0)  RC(7,0)  RC(6,1)  RC(7,1)  RC(6,2)  RC(7,2)  RC(6,3)   RC(7,3)  RC(6,4)
   mosi-pin = <20>;
   miso-pin = <25>;
   cs-gpios = <&pro_micro 15 GPIO_ACTIVE_HIGH>;
-  nice_view: ls0xx@0 {
- 		compatible = "sharp,ls0xx";
- 		label = "DISPLAY";
- 		spi-max-frequency = <1000000>;
- 		reg = <0>;
- 		width = <68>;
- 		height = <160>;
- 	};
 };
