@@ -37,6 +37,7 @@
 &trans  &kp LG(GRAVE)  &kp LG(LA(N3))  &kp LG(RBKT)  &kp LG(RBKT)  &kp LG(PIPE)  &bootloader  &trans  &kp STAR   &trans     &trans     &trans     &trans        &trans
 &trans  &trans         &trans          &trans        &trans        &kp DELETE    &trans       &trans  &trans     &trans     &trans     &trans     &trans        &trans  &trans
       >;
+    };
 
     vim_layer {
       bindings = <
