@@ -1,16 +1,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define TXT 0
+#define SYM 1
+#define FN  2
+#define VI  3
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp ESC     &kp Q      &kp W      &kp F      &kp R      &kp P            &kp E           &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp RET
-            &kp A      &kp S      &kp D      &kp T      &kp G                            &kp H      &kp N      &kp E      &kp O      &kp I
-&kp LSHIFT  &kp Z      &kp X      &kp C      &kp V      &kp B     &bootloader &kp X      &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp X
-&kp ESC     &kp ESC    &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X      &kp X
+&kp ESC     &kp Q       &kp W       &kp F       &kp R       &kp P        &kp C_PLAY_PAUSE       &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp RET
+            &kp A       &kp S       &kp D       &kp T       &kp G                               &kp H       &kp N       &kp E       &kp O       &kp I
+&kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B       &bootloader &kp LALT    &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp UP
+&kp ESC     &kp ESC     &kp TAB     &kp LCTRL   &kp LSHIFT  &kp BSPC    &mo VI      &kp LCMD    &kp SPACE   &mo SYM     &lt FN SQT  &kp MINUS   &kp LEFT    &kp DOWN    &kp RIGHT
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
