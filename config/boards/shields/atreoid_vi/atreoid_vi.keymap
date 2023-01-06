@@ -25,7 +25,7 @@
       bindings = <
 &trans      &kp EXCL    &kp AT      &kp LPAR    &kp RPAR    &kp AMPS           &trans            &kp EQUAL   &kp N7      &kp N8      &kp N9      &kp MINUS   &trans
             &kp TILDE   &kp DOLLAR  &kp LBRC    &kp RBRC    &kp CARET                            &kp PRCNT   &kp N4      &kp N5      &kp N6      &kp PLUS
-&trans      &kp GRAVE   &kp LA(N3)  &kp RBKT    &kp RBKT    &kp PIPE    &trans       &trans      &kp STAR    &kp N1      &kp N2      &kp N3      &kp BSLH    &trans
+&trans      &kp GRAVE   &kp LA(N3)  &kp LBKT    &kp RBKT    &kp PIPE    &trans       &trans      &kp STAR    &kp N1      &kp N2      &kp N3      &kp BSLH    &trans
 &trans      &trans      &trans      &trans      &trans      &kp DELETE  &trans       &trans      &trans      &trans      &kp N0      &kp DOT     &trans      &trans      &trans
       >;
     };
