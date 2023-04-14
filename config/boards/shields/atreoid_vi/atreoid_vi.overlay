@@ -60,10 +60,32 @@ RC(6,0)  RC(7,0)  RC(6,1)  RC(7,1)  RC(6,2)  RC(7,2)  RC(6,3)   RC(7,3)  RC(6,4)
   };
 };
 
+&pinctrl {
+	spi0_default: spi0_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+              <NRF_PSEL(SPIM_MOSI, 0, 20)>,
+              <NRF_PSEL(SPIM_MISO, 0, 25)>;
+		};
+	};
+	spi0_sleep: spi0_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+              <NRF_PSEL(SPIM_MOSI, 0, 20)>,
+              <NRF_PSEL(SPIM_MISO, 0, 25)>;
+			low-power-enable;
+		};
+	};
+};
+
 &nice_view_spi {
 	compatible = "nordic,nrf-spim";
-  //sck-pin = <17>;
-  //mosi-pin = <20>;
-  //miso-pin = <25>;
+  pinctrl-0 = <&spi0_default>;
+	pinctrl-1 = <&spi0_sleep>;
+	pinctrl-names = "default", "sleep";
   cs-gpios = <&pro_micro 15 GPIO_ACTIVE_HIGH>;
+};
+
+&pro_micro_i2c {
+	status = "disabled";
 };
