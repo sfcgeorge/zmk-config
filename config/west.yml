@@ -6,8 +6,10 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: theme-invert
+      # remote: caksoylar
+      # revision: theme-invert
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
