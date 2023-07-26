@@ -50,7 +50,7 @@ RC(6,0)  RC(7,0)  RC(6,1)  RC(7,1)  RC(6,2)  RC(7,2)  RC(6,3)   RC(7,3)  RC(6,4)
     label = "MIDDLE_ENCODER";
     a-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <20>;
+    steps = <80>;
     status = "okay";
   };
 
